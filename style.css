@@ -1,0 +1,216 @@
+.app .top .top-left{
+    position:relative;
+}
+
+.app .top .top-left .top-left-content{
+    position:absolute ;
+    background-color: white;;
+    height:500px;
+    padding: 10px;;
+    width: 200px;
+    top:45px;
+    left:0;
+    display:none;
+    transition: ease-in .5s;
+   
+
+}
+
+.top-left-content ul li a{
+    color: white;
+    width: 150px;;
+    padding: 15px;
+    border: 1px solid white;
+    margin:5px;
+    background-color: gray;
+    transition: all linear 0.5s;
+}
+
+.top-left-content ul span{
+    float: right;
+    color:rgb(12, 5, 5);
+    border-radius: 50%;
+    font-size: 20px;
+    padding:5px;
+    cursor: pointer;
+    transition:all linear .3s;
+}
+
+.top-left-content ul span:hover{
+    color:red;
+}
+
+.top-left-content ul li a:hover{
+    opacity:.7;
+}
+
+.top .top-left .left-container i:hover{
+    color: red;
+}
+
+.top .top-right{
+    position: relative;
+}
+
+.top .top-right .content{
+    position: absolute;
+    display: inline-block;
+    top:55px;
+    right: 0px;
+    text-align: right;
+    padding: 10px;
+    height: 70vh;
+    display: none;
+    background-color:rgba(255, 255, 255, 0.993);
+}
+
+
+
+.top .top-right .content a{
+    padding: 10px;
+    width:150px;
+    color: white;
+    margin-top: 2px;
+    background-color: rgb(129, 129, 129);
+}
+
+.top .top-right .content span{
+    float: left;
+    font-size: 20px;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+.top .top-right .content span:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1s;
+    animation-name: fade;
+    animation-duration: 1s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: 0}
+    to {opacity: 1}
+  }
+
+
+  .middle .middle-element form{
+    margin: 5px;
+    padding: 10px;
+    height: 300px;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* box-sizing: border-box; */
+
+
+  }
+  ::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: red; 
+    border-radius: 50px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
+
+  .button{
+    display: flex;
+	justify-content: space-between;
+    position:relative;
+	width: 280px;
+  }
+
+
+  .button .btn-container{
+    padding: 10px;
+	width: 300px;
+  }
+  .button .btn-content input{
+	 width: 30%;
+   
+  }
+
+  .button .btn-content{
+    position: absolute;
+    width: 260px; 
+    height: 100%;
+    bottom:-50%;
+    left:0;
+    display:none;
+    padding: 10px;
+    height:50px;
+	align-items: center;
+  }
+
+  .middle .middle-element form input[type=number]{
+    width: 70%;
+    padding:5px;
+    margin: 5px;
+    border: 1px solid;
+    box-shadow: rgba(0,0,0, 0.1);
+    text-align: center;
+
+  }
+  
+  .middle .middle-element form input[type=button]{
+    padding:5px;
+    margin:5px;
+    cursor:pointer;
+	  width:100%;
+    /* border-radius: 5px; */
+    /* border:1px solid; */
+    background-color: rgb(101, 224, 101);
+    transition:linear .3s;
+
+  }
+  .middle .middle-element form input[type=submit]{
+    padding:5px;
+    margin:5px;
+    cursor:pointer;
+	  width:100%;
+    /* border-radius: 5px; */
+    /* border:1px solid; */
+    background-color: rgb(101, 224, 101);
+    transition:linear .3s;
+
+  }
+
+  .middle .middle-element form input[type=button]:hover{
+   opacity: .5;
+   
+  }
+  .reasult{
+      flex:1;
+      text-align: center;
+      border:1px dotted;
+      padding:10px;
+      margin: 5px;
+      position: relative;
+	  max-width:400px;
+  }
