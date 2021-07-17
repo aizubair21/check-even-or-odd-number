@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile view</title>
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="mobile-view.css">
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <div class="container">
+        <div class="app">
+            <div class="mobile-view-body">
+                <div class="top">
+                    <div class="top-left">
+                        <a href="#" class="left-container" onclick="showContent()"><i class="fas fa-align-left"></i></a>
+                        <div class="top-left-content">
+                            <ul class="fade">
+                                <span onclick="hideContent()">&times</span>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Service</a></li>
+                                <li><a href="#">Games</a></li>
+                                <li><a href="#">Apps</a></li>
+                                <li><a href="#">Security</a></li>
+                                <li><a href="#">Malicius Text</a></li>
+                                <li><a href="#">Play Protect</a></li>
+                            </ul>
+                        </div>
+                    
+                    
+                    </div>
+                    <div class="top-middle">
+                        <form action="#">
+                            <input type="text" placeholder="SEARCH" >
+                            <button type="button"> <i class="fas fa-search"></i></button>
+                        </form>
+                    </div>
+                    <div class="top-right">
+                       <a href="#" > <img onclick="showRightContent()" id="showRightContent" src="avatar.png" alt=""></a>
+                        <div class="content fade">
+                            <ul>
+                                <span onclick="hideRightContent()">&times</span>
+                                <li><a href="#">View profile</a></li>
+                                <li><a href="#">Manage profile</a></li>
+                                <li><a href="#">Manage profile</a></li>
+                                <li><a href="#">Security</a></li>
+                                <li><a href="#">Account Management</a></li>
+                                <li><a href="#">Sign Out</a></li>
+                            </ul>
+                        </div>
+                    
+                    </div>
+                </div>
+				
+                <div class="middle">
+                  <div class="middle-element">
+                      <form action="#" name="input_form">
+                          <input id="first" type="number" placeholder="Start Number:" name="first" required>
+                          <input id="last" type="number" placeholder="Targeted Number:" name="last" required>
+						  
+						  
+                            <div class="button">
+
+                                <div class="btn-container">
+
+                                    <input type="submit" value="For" id="calc_for" onclick="open_calculate(event, 'calculate_for')">
+                                    <input type="submit" value="While" id="calc_while" onclick="open_calculate(event, 'calculate_while')">
+                                    <input type="submit" value="Recursive" id="calc_recursive" onclick="open_calculate(event, 'calculateRecursive')">
+                                </div>
+
+                                <div class="content">
+								
+                                    <div class="btn-content" id="calculate_for">
+                                        <input type="button" value="even with for" class="even_with_for" onclick="even_checker_for(+input_form.first.value, +input_form.last.value)">
+                                        <input type="button" value="odd with for" class="odd_with_for" onclick="odd_checker_for(+input_form.first.value, +input_form.last.value)">
+                                    </div>
+
+                                    <div class="btn-content" id="calculate_while">
+                                        <input type="button" value="even with while" id="even_with_while" onclick="even_checker_while(+input_form.first.value, +input_form.last.value)">
+                                        <input type="button" value="odd with while" id="odd_with_while" onclick="odd_checker_while(+input_form.first.value, +input_form.last.value)">
+                                    </div>
+
+                                    <div class="btn-content" id="calculateRecursive">
+                                        <input type="button" value="even with Recursive" id="even with Recursive" onclick="even_checker_recursive(+input_form.first.value, +input_form.last.value)">
+                                        <input type="button" value="odd with Recursive" id="odd with Recursive" onclick="odd_checker_recursive(+input_form.first.value, +input_form.last.value)">
+                                    
+									</div>
+									
+                                </div>
+								
+                            </div>
+							
+							
+                      </form>
+
+                  </div>
+                  <div class="reasult">
+                        <p class="show_reasult"></p>
+                  </div>
+                </div>
+                <div class="bottom">
+                    <ul class="bottom-links">
+    
+                        <li >
+                            <a href="#" class="bottom-btn" onclick="openClose()"> 
+                                <i class="fas fa-gamepad"></i>
+                                <span>games</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="bottom-btn" onclick="openClose()"> 
+                                <i class="fas fa-home"></i>
+                                <span>home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="bottom-btn" onclick="openClose()"> 
+                                <i class="fab fa-app-store"></i>
+                                <span>apps</span>
+                            </a>
+                        </li>   
+                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+    
+    <script src="mobile-view.js"></script>
+    <script src="event.js"></script>
+
+</body>
+</html>
