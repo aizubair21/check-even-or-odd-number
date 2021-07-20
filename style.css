@@ -4,7 +4,7 @@
 
 .app .top .top-left .top-left-content{
     position:absolute ;
-    background-color: white;;
+    background-color: white;
     height:500px;
     padding: 10px;;
     width: 200px;
@@ -189,7 +189,7 @@
     transition:linear .3s;
 
   }
-  .middle .middle-element form input[type=submit]{
+  .middle .middle-element form input[type=button]{
     padding:5px;
     margin:5px;
     cursor:pointer;
